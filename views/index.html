@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>URL Shortener Microservice</title>
+    <link href="/public/favicon.png" rel="icon" type="image/png" />
+    <link href="/public/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>URL Shortener Microservice</h1>
+    <hr />
+    <main>
+      <section>
+        <form action="api/shorturl" method="POST">
+          <fieldset>
+            <legend>URL Shortener</legend>
+            <label for="url_input">URL:</label>
+            <input id="url_input" type="text" name="url" placeholder="https://ye-song.github.io/projects/" />
+            <input type="submit" value="Submit URL" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <div>
+      <h3>Example Usage:</h3>
+      <p>
+          Key in the full URL (Include https://) you would like to shorten and click on submit. It will return the original URL an a short URL. <br/><br/> In the address bar, key in the short URL number and it will redirect you to the original URL.<br/><br/><b>Example:</b> https://shortadd.herokuapp.com/api/shorturl/17
+      </p>
+    </div>
+    <footer>
+      <p>
+        <a href="https://ye-song.github.io/projects/">
+            <img src="/public/favicon.png" width="48" height="48">
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
